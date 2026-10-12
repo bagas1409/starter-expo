@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <StatusBar style="auto" />
       <SafeAreaView style={{ flex: 1 }}>
-        <View className="px-5 bg-[#FFF9F2] flex flex-1 pt-2">
+        <View className="px-5 bg-[#FFF9F2] flex flex-1 py-2">
           <View
             className="flex flex-col gap-3 items-center  justify-center bg-[#253C6D] border-1 border-[#EEEEEE] h-auto py-10  rounded-xl "
             style={{

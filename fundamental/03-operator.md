@@ -40,30 +40,62 @@ const totalBiaya = hargaSatuan * jumlahBeli; // 75000
 ```
 
 #### B. Operator Perbandingan (Hasilnya selalu `true` atau `false`)
-- Sama persis: `===` (Gunakan selalu 3 tanda sama dengan!)
-- Tidak sama: `!==`
-- Lebih besar: `>`
-- Lebih kecil: `<`
-- Lebih besar sama dengan: `>=`
-- Lebih kecil sama dengan: `<=`
+> 📂 **Panduan Lengkap & Studi Kasus Tiap Operator:** Lihat folder [latihan tambahan tahap 3](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/README.md)
 
-```typescript
-const stokDarah = 0;
-const isStokHabis = stokDarah === 0; // true
-const umur = 16;
-const bolehDonor = umur >= 17; // false
-```
+1. **Sama persis (`===`)** -> [01-perbandingan-sama-persis.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/01-perbandingan-sama-persis.md)
+   ```typescript
+   const role = "Admin";
+   const isAdmin = role === "Admin"; // true
+   ```
+2. **Tidak sama (`!==`)** -> [02-perbandingan-tidak-sama.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/02-perbandingan-tidak-sama.md)
+   ```typescript
+   const status = "Proses";
+   const isBelumSelesai = status !== "Selesai"; // true
+   ```
+3. **Lebih besar (`>`)** -> [03-perbandingan-lebih-besar.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/03-perbandingan-lebih-besar.md)
+   ```typescript
+   const kantong = 60;
+   const isTargetLewat = kantong > 50; // true
+   ```
+4. **Lebih kecil (`<`)** -> [04-perbandingan-lebih-kecil.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/04-perbandingan-lebih-kecil.md)
+   ```typescript
+   const sisaStok = 4;
+   const isKritis = sisaStok < 10; // true
+   ```
+5. **Lebih besar sama dengan (`>=`)** -> [05-perbandingan-lebih-besar-sama-dengan.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/05-perbandingan-lebih-besar-sama-dengan.md)
+   ```typescript
+   const umur = 17;
+   const isCukupUmur = umur >= 17; // true (17 pas tetap lolos!)
+   ```
+6. **Lebih kecil sama dengan (`<=`)** -> [06-perbandingan-lebih-kecil-sama-dengan.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/06-perbandingan-lebih-kecil-sama-dengan.md)
+   ```typescript
+   const muatan = 15;
+   const isAman = muatan <= 15; // true (15 pas masih aman!)
+   ```
 
 #### C. Operator Logika (Menghubungkan kondisi)
-- **DAN (`&&`)**: Dua-duanya harus benar baru bernilai `true`.
-- **ATAU (`||`)**: Cukup salah satu benar sudah bernilai `true`.
-- **BUKAN / KEBALIKAN (`!`)**: Membalikkan boolean (`!true` jadi `false`).
+> 📂 **Panduan Lengkap & Studi Kasus Tiap Operator:** Lihat folder [latihan tambahan tahap 3](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/README.md)
 
-```typescript
-const punyaAkun = true;
-const passwordBenar = true;
-const bisaMasuk = punyaAkun && passwordBenar; // true
-```
+1. **DAN (`&&`)** -> [07-logika-dan.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/07-logika-dan.md)  
+   *Semua syarat wajib benar baru bernilai `true`.*
+   ```typescript
+   const cukupUmur = true;
+   const cukupBerat = true;
+   const bolehDonor = cukupUmur && cukupBerat; // true
+   ```
+2. **ATAU (`||`)** -> [08-logika-atau.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/08-logika-atau.md)  
+   *Cukup salah satu benar sudah bernilai `true`.*
+   ```typescript
+   const bayarQRIS = false;
+   const bayarTransfer = true;
+   const berhasilBayar = bayarQRIS || bayarTransfer; // true
+   ```
+3. **BUKAN / NEGASI (`!`)** -> [09-logika-bukan.md](file:///c:/Users/bagas/Desktop/belajar/Aplikasi/fundamental/latihan%20tambahan%20tahap%203/09-logika-bukan.md)  
+   *Membalikkan nilai boolean (`!true` jadi `false`, `!false` jadi `true`).*
+   ```typescript
+   const isUploadFoto = false;
+   const tombolDisabled = !isUploadFoto; // true
+   ```
 
 ---
 
